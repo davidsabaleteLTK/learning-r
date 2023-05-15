@@ -1,5 +1,5 @@
 data("ToothGrowth")
-View(ToothGrowth)
+head(ToothGrowth)
 install.packages("dplyr")
 
 # atomic
@@ -21,5 +21,5 @@ filtered_toothgrowth <- ToothGrowth %>%
   group_by(supp) %>% 
   summarise(mean_lean = mean(len,na.rm = T),.group="drop")
 
+library(lubridate)
 mdy("April 10, 2019")
-
